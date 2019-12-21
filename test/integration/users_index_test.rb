@@ -5,8 +5,8 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
   #   assert true
   # end
   def setup
-    @user       = users(:michael)
-    @other_user = users(:archer)
+    @admin       = users(:michael)
+    @non_admin = users(:archer)
   end
 
   test "index as admin including pagination and delete links" do
